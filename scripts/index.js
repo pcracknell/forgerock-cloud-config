@@ -10,6 +10,7 @@ const updateInternalRoles = require('./update-internal-roles')
 const updateManagedObjects = require('./update-managed-objects')
 const updateRemoteServers = require('./update-remote-servers')
 const updateScripts = require('./update-scripts')
+const getScripts = require('./get-scripts')
 const updateServices = require('./update-services')
 const updateTermsAndConditions = require('./update-terms-and-conditions')
 const updatePasswordPolicy = require('./update-password-policy')
@@ -33,6 +34,7 @@ module.exports = {
   updateManagedObjects,
   updateRemoteServers,
   updateScripts,
+  getScripts,
   updateServices,
   updateTermsAndConditions,
   updatePasswordPolicy,

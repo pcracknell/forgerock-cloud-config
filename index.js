@@ -14,6 +14,7 @@ const {
   updateManagedObjects,
   updateRemoteServers,
   updateScripts,
+  getScripts,
   updateServices,
   updateTermsAndConditions,
   updatePasswordPolicy,
@@ -67,6 +68,12 @@ yargs
     desc: 'Get AM Auth Tree (Journey)',
     builder: cliOptions(['username', 'password', 'realm', 'authTreeName']),
     handler: (argv) => getAuthTree(argv)
+  })
+  .command({
+    command: 'get-scripts',
+    desc: 'Get AM scripts (./config/scripts)',
+    builder: cliOptions(['username', 'password', 'realm']),
+    handler: (argv) => getScripts(argv)
   })
   .command({
     command: 'connector-definitions',
